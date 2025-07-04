@@ -3,9 +3,11 @@
 <div id="posts">
   <% @posts.each do |post| %>
     <div>
-      <a href="/products/<%= post.id %>">
-        <%= post.name %>
+      <a href="/posts/<%= post.id %>">
+        <%= post.title %>
       </a>
+      <p><%= post.content %></p>
     </div>
+    <br />
   <% end %>
 </div>
