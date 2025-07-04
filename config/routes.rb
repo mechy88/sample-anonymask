@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   resource :password_reset
   resource :password
 
+  resource :post
 
-
-  root "main#index"
+  # root "post#index"
 end
