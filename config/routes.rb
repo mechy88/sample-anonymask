@@ -11,4 +11,14 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Authentication Related Paths
+  resource :registration
+  resource :session
+  resource :password_reset
+  resource :password
+
+
+
+  root "main#index"
 end
