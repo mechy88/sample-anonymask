@@ -5,5 +5,5 @@ class Post < ApplicationRecord
 
   validates :title, presence: true, length: { maximum: 300 }
   validates :content, presence: true, length: { maximum: 40000 }
-  validates :status, presence: true, inclusion: { in: statuses.keys, message: "Post does not have a valid status" }
+  validates :status, presence: true, inclusion: { in: statuses.keys, message: " is not valid" }
 end
